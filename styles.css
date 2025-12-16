@@ -1009,3 +1009,17 @@ footer {
         height: auto;
     }
 }
+
+.video-responsive {
+    position: relative;
+    width: 100%;
+    max-width: 800px;      /* tamaño desktop */
+    margin: 0 auto 30px;   /* centrado */
+    aspect-ratio: 16 / 9;  /* 🔑 mantiene proporción */
+}
+
+.video-responsive iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;   /* opcional, queda lindo */
+}
