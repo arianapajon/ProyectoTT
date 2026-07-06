@@ -4,19 +4,24 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Frutiger Dreams</title>
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="css/styles.css" />
 <link rel="shortcut icon" href="images/favicon.gif">
 </head>
 <body>
 <header>
+    <div class="contenedor"><img src="images/bubbles.png" class="imagen-arriba"></div>
+    <div class="contenedor"><img src="images/mariposa.png" class="imagen-costado"></div>
     <section class="hero">
+        <div class="menu-toggle" id="menu-toggle">
+    ☰
+    </div>
     <nav class="nav-aero">
     <ul>
     <li><a href="index.html">Inicio</a></li>
-    <li><a href="info.html">Info</a></li>
-    <li><a href="inspo.html">Inspo</a></li>
-    <li><a href="productos.html">Productos</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="pages/info.html">Info</a></li>
+    <li><a href="pages/inspo.html">Inspo</a></li>
+    <li><a href="pages/productos.html">Productos</a></li>
+    <li><a href="pages/contacto.html">Contacto</a></li>
     </ul>
 </nav>
 </section>
@@ -25,7 +30,6 @@
 <main>
 <section id="inicio">
 <div class="cardd">
-
     <!-- Barra tipo ventana -->
     <div class="cardd-header">
     <span class="dot"></span>
@@ -35,7 +39,6 @@
     </div>
 
     <!-- Contenido -->
-    
     <div class="cardd-body">
     <div class="carousel-aero">
     <div class="slides-aero">
@@ -44,13 +47,13 @@
         <input type="radio" name="radio-btn" id="img-a3">
 
         <div class="slide-aero first-aero">
-            <img src="images/slider1.jpg" alt="">
+            <img src="images/stock2.jpg" alt="">
+        </div>
+        <div class="slide-aero">
+            <img src="images/xp.jpg" alt="">
         </div>
         <div class="slide-aero">
             <img src="images/slider2.webp" alt="">
-        </div>
-        <div class="slide-aero">
-            <img src="images/slider3.jpg" alt="">
         </div>
         </div>
 
@@ -58,7 +61,7 @@
         <label for="img-a1" class="manual-btn-aero"></label>
         <label for="img-a2" class="manual-btn-aero"></label>
         <label for="img-a3" class="manual-btn-aero"></label>
-    </div>
+        </div>
     </div>
 
     <p>Bienvenido a Frutiger Dreams, un espacio nostálgico donde los 2000 vuelven a brillar con un 
@@ -73,5 +76,8 @@ parece amable otra vez. Te invitamos a navegar por el sitio y descubrir más sob
 <footer>
     <p>© 2025 Ariana Pajon</p>
 </footer>
+
+<script src="js/menu.js"></script>
+
 </body>
 </html>

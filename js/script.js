@@ -1,7 +1,7 @@
 // ================================
 // VARIABLES GLOBALES
 // ================================
-const contenedorProductos = document.getElementById("productos-container"); // ← CORREGIDO
+const contenedorProductos = document.getElementById("productos-container"); 
 const carrito = document.getElementById("carrito");
 const carritoItems = document.getElementById("carrito-items");
 const carritoTotal = document.getElementById("carrito-total");
@@ -186,3 +186,20 @@ document.addEventListener("scroll", () => {
         carritoBtn.classList.add("oculto");
     }
 });
+
+// ================================
+// MENÚ HAMBURGUESA
+// ================================
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector(".nav-aero");
+
+console.log(menuToggle);
+console.log(nav);
+
+if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+        console.log("CLICK");
+        menuToggle.classList.toggle("activo");
+        nav.classList.toggle("activo");
+    });
+}

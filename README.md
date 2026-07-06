@@ -39,7 +39,6 @@ proyecto/
 ├── index.html
 ├── productos.html
 ├── contacto.html
-├── musica.html
 ├── styles.css
 ├── script.js
 ├── README.md

@@ -4,17 +4,22 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Frutiger Dreams</title>
-<link rel="stylesheet" href="styles.css" />
-<link rel="shortcut icon" href="images/favicon.gif">
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="shortcut icon" href="../images/favicon.gif">
 </head>
 
 <body>
 
 <header>
+    <div class="contenedor"><img src="../images/bubbles.png" class="imagen-arriba"></div>
+    <div class="contenedor"><img src="../images/mariposa.png" class="imagen-costado"></div>
     <section class="hero">
+        <div class="menu-toggle" id="menu-toggle">
+    ☰
+    </div>
     <nav class="nav-aero">
     <ul>
-    <li><a href="index.html">Inicio</a></li>
+    <li><a href="../index.html">Inicio</a></li>
     <li><a href="info.html">Info</a></li>
     <li><a href="inspo.html">Inspo</a></li>
     <li><a href="productos.html">Productos</a></li>
@@ -34,36 +39,36 @@
 <section id="productos">
     <div class="cardd">
         <!-- Barra ventana -->
-    <div class="cardd-header">
+        <div class="cardd-header">
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="title-bar">Productos</span>
+        </div>
+        <!-- Contenido -->
+        <div class="cardd-body">
+        <!-- CONTENEDOR donde JS coloca las cards -->
+        <div class="productos-container" id="productos-container"></div>
+        </div>
     </div>
-
-    <!-- Contenido -->
-    <div class="cardd-body">
-    <!-- CONTENEDOR donde JS coloca las cards -->
-    <div class="productos-container" id="productos-container"></div>
-    </div></div>
 </section>
 
 <section id="reseñas">
 <div class="reseñas-grid">
     <div class="reseña-card">
-        <img src="images/user.png" alt="Foto de cliente" class="reseña-img">
+        <img src="../images/user.png" alt="Foto de cliente" class="reseña-img">
         <h4 class="reseña-nombre">Mariana López</h4>
         <div class="reseña-estrellas">★★★★★</div>
         <p class="reseña-texto">"Los productos son hermosos y de excelente calidad. Llegaron súper rápido."</p>
     </div>
     <div class="reseña-card">
-        <img src="images/user.png" alt="Foto de cliente" class="reseña-img">
+        <img src="../images/user.png" alt="Foto de cliente" class="reseña-img">
         <h4 class="reseña-nombre">Tomás Pereira</h4>
         <div class="reseña-estrellas">★★★★☆</div>
         <p class="reseña-texto">"Muy buena atención y diseños únicos. Seguramente volveré a comprar."</p>
     </div>
     <div class="reseña-card">
-        <img src="images/user.png" alt="Foto de cliente" class="reseña-img">
+        <img src="../images/user.png" alt="Foto de cliente" class="reseña-img">
         <h4 class="reseña-nombre">Lucía Fernández</h4>
         <div class="reseña-estrellas">★★★★★</div>
         <p class="reseña-texto">"Me encantó todo, súper estético y con vibra futurista 2000s. 10/10."</p>
@@ -89,6 +94,7 @@
     <button id="vaciar-carrito">Vaciar carrito</button>
 </section>
 
-<script src="script.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/menu.js"></script>
 </body>
 </html>
